@@ -1,3 +1,5 @@
+//Tiene la desventaja de que es poco escalable. Es toda una Piramide de Callback.
+// No se puede usar codigo afuera del codigo que haga referencia a la funcion asincrona ya que produce un error undefined.
 function requestHandler(req, res) {
   User.findById(req.userId, function(err, user) {
     if (err) {
