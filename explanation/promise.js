@@ -1,3 +1,8 @@
+// Una promesa siempre tiene un metodo then y un metodo catch
+// then() cuando todo funciona super!
+// catch() se produjo un error!
+// Permite tener then() anidados de manera que el orden determina
+// la secuencia de ejecucion, y se puede comunicar por medio de los return al siguiente then()
 function requestHandler(req, res) {
   User.findById(req.userId)
     .then(function (user) {
