@@ -1,3 +1,5 @@
+// Si no fuera usado el Try Catch, el Throw generearía un error que dentendría todos los procesos.
+
 const util = require('util');
 const sleep = util.promisify(setTimeout);
 
